@@ -52,3 +52,120 @@ In programming, functions can be categorized as follows:
 - Functions that don't take parameter(s) but return a value.
 - Functions that take parameter(s) but don't return a value
 - Functions that take parameter(s) and return a value.
+#### Functions thad don't take parameter(s) and dont return a value
+As the name suggests, these functions don't take any parameters and dont return any values.
+```
+function add() {
+  let a = 50;
+  let b = 69;
+  console.log(a + b);
+}
+
+add();
+```
+#### Functions that dont take parameter(s) but return a value
+Thess functions dont take any parameter(s) but they return a value.
+```
+function add() {
+  let a = 55;
+  let b = 68;
+  return a + b;
+}
+
+console.log(add());
+```
+#### Functions that take parameter(s) but dont return a value
+These functions take parameters but they dont return a value.
+```
+function add(a, b) {
+  console.log(a + b);
+}
+add(5, 3);
+```
+#### Functions that take parameters and return a value
+These functions take in parameters an return a value.
+```
+function add(a, b) {
+  return a + b;
+}
+console.log(add(5, 3));
+```
+### Types of functions in Javascript
+Javascript has the following types of functions:
+- Function declaration
+- Function expression/anonyous function
+- Arrow functions 
+- Immediately Invoked Function Expression(IIFE)
+- Callback functions
+#### Function declaration
+```
+function add(a, b) {
+  console.log(a + b);
+}
+
+add(5, 2);
+```
+#### Function expression/anonymous function
+This involves saving a function to a variable
+```
+let add = function (a, b) {
+  console.log(a + b);
+}
+
+add(5, 2);
+```
+#### Arrow functions
+These functions were introduced in ES^ and are used to simplify how we write functions.
+```
+let add = (a, b) => {
+  return a + b;
+}
+
+console.log(add(5, 2));
+```
+##### If an arrow function has only one line in the body, we can get rid of the curly braces. 
+This means that instead of having this long code;
+```
+let add = (a, b) => console.log(a + b);
+```
+##### If an arrow function has only one line of code in the body and that line happens to be a return statement, we can get rid of the `return` keyword,
+For example
+```
+let add = (a, b) => a + b;
+
+console.log(add(5, 2));
+```
+##### If an arrow function has only one parameter, we can get rid of the parenthesis
+```
+let square = number => number * number;
+
+console.log(square(8)); // 64
+```
+#### Immediately Invoked Function Expressions(IIFE)
+These are functions that are executed immediately after being defined:
+```
+(function () {
+  console.log("Hello, World!");
+})();
+```
+These functions can also take parameters:
+```
+(function (a, b) {
+  let sum = a + b;
+  let product = a + b;
+  console.log(`The sum of ${a} and ${b} is ${sum}`);
+  console.log(`The product of ${a} and ${b} is ${product}`);
+})(5, 6);
+```
+#### Callback functions
+They refer to functions passed as arguments to other functions.
+```
+function greet(name, callback) {
+  console.log(`Hello ${name}`);
+  callback();
+}
+
+greet("Dennis", function () {
+  console.log("Welcome back");
+});
+```
