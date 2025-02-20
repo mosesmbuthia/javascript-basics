@@ -105,3 +105,53 @@ const students = ["John", "Ken", "June", "Jack"];
 console.log(students.at(2)); // June
 console.log(students.at(0)); // John\
 ```
+`join` 
+The join() method also joins all array lements into a string. 
+It behaves just like string(), but in addition, you can specify the separator:
+```
+const students = ["John", "Ken", "June", "Jack"];
+console.log(students.join("++")); // John++Ken++June++Jack
+```
+`concat()`
+The concat() method creates a new array by merging(concatenating) existing arrays.
+```
+const arr1 = ["jack", "franklin", "june"];
+const arr2 = ["andrew", "alex", "ken"];
+console.log(arr1.concat(arr2));
+// [ 'jack', 'franklin', 'june', 'andrew', 'alex', 'ken' ]
+```
+`flat()` 
+The flat method converts multidemensional array to a one dimention array.
+```
+const students = [
+  ["jack", "franklin"],
+  ["june", "andrew"],
+  ["alex", "ken"],
+];
+console.log(students.flat());
+// ['jack', 'franklin', 'june', 'andrew', 'alex', 'ken']
+
+```
+`indeOf()`
+The `indexOf()` method is used to find the index of an element.
+
+It returns -1 if the element is not  found.
+```
+const students = ["John", "Ken", "June", "Jack"];
+console.log(students.indexOf("June")); // 2
+```
+`includes()`
+This checks if an element exists in an array. 
+It returns true if it exists and false if it doesn't.
+```
+const students = ["John", "Ken", "June", "Jack"];
+console.log(students.includes("Ken")); // true
+console.log(students.includes("Elvis")); // false
+```
+
+`reverse()`
+This reverses the elements of an array.
+```
+const students = ["John", "Ken", "June", "Jack"];
+console.log(students.reverse());
+```
