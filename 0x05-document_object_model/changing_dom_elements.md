@@ -3,14 +3,14 @@ We can change the contents, attributes, and styling of DOM elements.
 ### Changing the contents of HTML elements
 `innerHTML`
 This keyword sets or gets the HTML content of an element.
-```
+```html
 <div id="my-div">
     <h1>Hello, world</h1>
     <p>JavaScript is awesome</p>
 </div>
 ```
 
-```
+```js
 const div = document.getElementById("my-div");
 console.log(div.innerHTML);
 div.innerHTML = `<h1>New content</h1>`;
@@ -18,14 +18,14 @@ console.log(div.innerHTML);
 ```
 `innerText`
 This keyword sets or gets the text content of an element not preserving the HTMl tags.
-```
+```html
 <div id="my-div">
     <h1>Hello, world</h1>
     <p>JavaScript is awesome</p>
 </div>
 ```
 
-```
+```js
 const div = document.getElementById("my-div");
 console.log(div.innerText);
 div.innerText = "New content";
@@ -38,20 +38,20 @@ This is usually more consistent across browsers compared to `innerText`
 
 ### Changing the attribute of HTML elements
 To change the attribute of a HTML element by using `element.attribute = value`
-```
+```html
 <h1 class="title" id="title">Hello, world</h1>
 ```
-```
+```js
 const title = document.getElementById("title");
 console.log(title); // <h1 class="title" id="title">Hello, world</h1>
 title.id = "awesome-title";
 console.log(title); // <h1 class="title" id="awesome-title">Hello, world</h1>
 ```
 We can also use `element.setAttribute("attribute", "value") 
-```
+```html
 <h1 class="title" id="title">Hello, world</h1>
 ```
-```
+```js
 const title = document.getElementById("title");
 console.log(title); // <h1 class="title" id="title">Hello, world</h1>
 title.setAttribute("id", "awesome-title");
@@ -61,7 +61,7 @@ console.log(title);
 we can use `element.style.property = "value'` to change the styling of a HTML elements.
 
 It is important to input the value in double quotes even if it is a number.
-```
+```js
 const title = document.getElementById("title");
 title.style.border = "3px solid red";
 title.style.fontSize = "48px";

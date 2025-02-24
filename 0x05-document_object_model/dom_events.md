@@ -6,7 +6,7 @@ Events are triggered by user interactions such as clicks, key presses or mouse m
 ### Some popular DOM evemts
 `onclick`
 This is triggered when an element is clicked.
-```
+```js
 const btn = document.getElementById("btn");
 btn.onclick = function () {
   console.log("Button Clicked");

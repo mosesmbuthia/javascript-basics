@@ -11,7 +11,7 @@ There are two ways of adding Javascript to HTML.
 This is where Javascript is written inside a `<script>` tag with the HTML file
 ###### Example
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,7 @@ Here, the javascript is stored in separate .js file and linked to the HTML using
 ######
 Example
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +70,7 @@ To counter this and improve on performance, we use:
 
 ###### Example
 
-```
+```html
 <script src="./test.js" defer></script>
 ```
 2. `async` keyword
@@ -79,14 +79,14 @@ To counter this and improve on performance, we use:
 
 ###### Example
 
-```
+```html
 <script src="./test.js" async></script>
 ```
 3. Adding the `<script>` tag at the end of the page before the closing `<body>` tag.
 
 ###### Example
 
-```
+```html
  ....
   <script src="./test.js"></script>
 </body>

@@ -9,7 +9,7 @@ The first parameter is the type of event passed in as a string e.g., click, mous
 The second parameter is the function we want to call when the specified event occurs.
 
 **Example**
-```
+```js
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", function () {

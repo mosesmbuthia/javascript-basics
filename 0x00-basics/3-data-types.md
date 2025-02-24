@@ -13,7 +13,7 @@ This refers to a sequence of characters enclosed with single quote('), double qu
 or backticks(`)
 ###### Example
 
-```
+```js
 let firstName = "Moses"; //double quotes
 let lastName = 'Mbuthia;' //single quotes
 let userName = `Moses-Mbuthia` //backticks
@@ -22,7 +22,7 @@ let userName = `Moses-Mbuthia` //backticks
 Javascript has ony one type of numbers: it can store both integers and decimals
 ###### Example
 
-```
+```js
 let age = 27; //integer
 let price = 199.99; //decimal
 let notANumber = NaN; //Not a Number(invalid math operation)
@@ -32,14 +32,14 @@ This represents true or false values, ofte used for decision-making.
 A boolean can be either `true` or `false`
 ###### Example
 
-```
+```js
 let isMale = true;
 let isFemale = false;
 ```
 ### `undefined`
 This refers to a variable that has been declared but not initialized
 
-```
+```js
 let country;
 console.log(country); // output is undefined
 ```
@@ -49,14 +49,14 @@ console.log(country); // output is undefined
 ### BigInt
 This is used for numbers beyond Javascript's `Number.MAX_SAFE_INTEGER`(9,007,,199,254,740,991)
 
-```
+```js
 let bigNumber = 123456789012345678901234567890;
 console.log(bigNumber)
 ```
 ### Checking the type of a variable using the `typeof` operator
 You can always check the type of the variable using the `typeof` operator in Javascript.
 
-```
+```js
 let bigNumber = 123456789012345678901234567890;
 console.log(typeof bigNumber) //this is returns bigint
 

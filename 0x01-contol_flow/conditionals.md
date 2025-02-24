@@ -19,7 +19,7 @@ Conditional statements in Javascript are;
 The `if` statement allows you to executea block of code if a specified condition is true.
 
 The syntax goes as follows:
-```
+```js
 if (condition); (block of code to be executed)
 
 let age = 27
@@ -31,7 +31,7 @@ if (age > 18) {
 This executes the code in the `if` block when the condition is true, if the condition is false, the code inside the else block gets executed.
 
 The synatx is as follows:
-```
+```js
 if (condition) {
 //block of code to be executed if the condition is true
 } else {
@@ -39,7 +39,7 @@ if (condition) {
 }
 ```
 Code example;
-```
+```js
 let age = 27;
 if age (> 18) {
     console.log("You are an adult")
@@ -51,7 +51,7 @@ if age (> 18) {
 This is used when multiple conditions need to be checked sequentially.
 
 The syntax is as follows:
-```
+```js
 if (condition) {
 //block of code to be executed if condition1 is true
 } else if {
@@ -64,7 +64,7 @@ if (condition) {
 This is used when a variable has multiple possible values. it's cleaner than having multiple `if..else` if conditions.
 
 Its synatx is as follows:
-```
+```js
 switch (expression) {
     case value1:
         //block of code to be executed if expression === value1
@@ -77,7 +77,7 @@ switch (expression) {
 }
 ```
 Example in the code:
-```
+```js
 let day = "Monday";
 switch (day) {
     case "Monday":
@@ -97,11 +97,11 @@ switch (day) {
 The tenary operator provides a concise way to write if-else stateements in a single line.
 
 The synatx goes as follows:
-```
+```js
 condition ? expression if condition is true : expression if condition is false
 ```
 Example in the code:
-```
+```js
 let age = 27;
 age > 18 ? console.log("You are an adult") : console.log("You are a child");
 

@@ -14,7 +14,7 @@ JavaScript provides the following ways to create objects:
 - Using a constructor fuction
 **Using Object Literal**
 The simplest way to create an object is to use curly braces, this is reffered to as **ibject literal**
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -27,7 +27,7 @@ const student = {
 ```
 **Using `new Object()`**
 The `new Object()` Keyword creates an empty object. It's functionally equivalent to object literal but rarely used in modern JavaScript.
-```
+```js
 const student = new Object();
 student.firstName = "John";
 student.lastName = "Doe";
@@ -40,7 +40,7 @@ student.greet = function () {
 
 **Using a Contractor Function**
 A constructor function in JavaScript is a regular function used witt the `new` keyword to create multiple objects with shared properties and methods..
-```
+```js
 function Student(firstName, lastName, age, isStillStudying) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -61,7 +61,7 @@ There are two ways of accessing object properties:
 - Bracket notation
 **Dot notation**
 This allows access to an object's properties using a dot `(.)` followed by the property name.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -79,7 +79,7 @@ console.log(student.lastName); // Doe
 This accesses an object's properties using square barckets`([])` with the property name as a string.
 
 It's useful for dynamic keys or properties with special characters.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -98,7 +98,7 @@ console.log(student["isStillStudying"]); // true
 ### Modifying objects
 **Adding new properties**
 Here, you can use the dot or bracket notation to add new properties to an object.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -114,7 +114,7 @@ student["graduationYear"] = 2026;
 ```
 **Updating a Property**
 You can also use dot or bracket notation to update an object's properties.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -130,7 +130,7 @@ student["isStillStudying"] = false;
 ```
 **Deleting a property**
 You can use the `delete` keyword to delete a property.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -151,7 +151,7 @@ To check if a certain property is availble in an object, you use:
 - The `hasOwnProperty()` method
 
 **The `in` keyword**
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -166,7 +166,7 @@ console.log("firstName" in student); // true
 console.log("middleName" in student); // false
 ```
 **The `hasOwnProperty()` method
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -183,7 +183,7 @@ console.log(student.hasOwnProperty("middleName")); // false
 ### Object Method
 `Object.keys(objectName)`
 It returns an array containing all the keys of an object.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -199,7 +199,7 @@ console.log(Object.keys(student));
 ```
 `Object.values(objectName)`
 This returns an array containing all the values of an object.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -215,7 +215,7 @@ console.log(Object.values(student));
 ```
 `Object.entries(objectName)`
 `Object.entries()` returns an array of key value pairs from an object, making it useful for iteration.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -237,7 +237,7 @@ console.log(Object.entries(student));
 ```
 `Object.freeze(objectName)`
 This freezes an object, preventing new properties from being added to it and existing ones from being removed, it also prevents an object from modification.
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",
@@ -253,7 +253,7 @@ student.middleName = "Smith"; // won't work
 ```
 #### Iterating over an bject using the `for..in` loop
 You can use the `for..in` loop to iterate over an object as shown in the code below:
-```
+```js
 const student = {
   firstName: "John",
   lastName: "Doe",

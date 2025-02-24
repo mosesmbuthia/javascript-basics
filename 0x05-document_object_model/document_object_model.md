@@ -3,7 +3,7 @@ The Document Object Model is a standard for how to get, change, add, delete and 
 
 When a webpage is loaded, the browser creates a Document Object Model(DOM) of the page which is constructed as a tree of objects.
 
-```
+```hTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
